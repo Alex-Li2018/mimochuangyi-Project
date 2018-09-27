@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<!-- 引入amaze的css -->
+	<link rel="stylesheet" href="./lib/amazeui/css/amazeui.min.css">
+	<!-- 1.引入less文件 -->
+	<link rel="stylesheet/less" href="./less/index.less">
+	<!-- 2.引入解析less文件的js -->
+	<script src="./lib/less/less.js"></script>
+	<!-- <style>
+		div {
+
+		}
+	</style> -->
+</head>
+<body>
+	
+	<header class="am-topbar am-g" id="header">
+	  <!-- logo图标 -->
+	  <h1 class="am-topbar-brand">
+	    <a href="#">
+			<img src="./img/logo1.png" alt="">觅末创意</a>
+	  </h1>
+	
+	  <!-- 按钮 -->
+	  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+		
+	  	<!-- 导航栏 -->
+	  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+	    <ul class="am-nav am-nav-pills am-topbar-nav">
+	      <li><a href="#">服务介绍</a></li>
+	      <li><a href="#">最新案例</a></li>
+	      <li><a href="#">关于我们</a></li>
+	      <li><a href="#">联系我们</a></li>
+	    </ul>
+	  </div>
+</header>
+
+	<!-- banner广告区域 -->
+	<section id="banner">
+		<div class="container">
+			<div class="card">
+				<div>
+	            <p>CRE<br>ATIV<br>ITY.</p>
+	          </div>
+	          <a href="#service">
+	          	<span class="am-icon-caret-down"></span>
+	          </a>
+			</div>
+		</div>
+	</section>
+
+	<!-- 服务介绍 -->
+	<section id="service"></section>
+
+	
+	<footer style="height : 600px"></footer>
+
+	<!-- 引入jquery文件 -->
+	<script src="./lib/jquery/jquery.min.js"></script>
+	<!-- 1.引入amazeui的js -->
+	<script src="./lib/amazeui/js/amazeui.min.js"></script>
+	<!-- 2.引入功能js -->
+	<script src="./JS/index.js"></script>
+</body>
+</html>

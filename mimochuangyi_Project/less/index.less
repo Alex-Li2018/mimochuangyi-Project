@@ -1,0 +1,103 @@
+//导入base文件
+@import './base.less';
+
+//页面样式 
+
+//头部样式
+#header {
+	background-color: @header-color;
+	margin: 0;
+	//logo样式设计
+	> .am-topbar-brand {
+		height: 60px;
+		line-height: 60px;
+		padding: 0 100px 0  180px; 
+		> a {
+			line-height: 60px;
+			font-size: 18px;
+			display: block;
+			text-align: center;
+			> img {
+				height: 28px;
+				margin: -7px 10px 0  0; 
+			}
+		}
+	}
+	//导航栏样式设计
+	> div {
+		@media only screen and (min-width: 641px) {
+			> ul {
+				> li {
+					padding: 0 20px;
+				}
+			}
+		}		
+	}
+	//删除三角形
+	@media only screen and (min-width: 641px) {
+		.am-topbar-nav>li>a{
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				display: block;
+				padding: 0 20px;
+				&:hover {
+					background-color: #0e90d2;
+				}
+				&:after {
+		   		display: none; 
+				}
+			}
+	}	
+}
+
+//banner区域样式
+#banner {
+	height: 1000px;
+	background: url(../img/header-bg.jpg) no-repeat center top /cover;
+	> .container {
+		   height : 100%;
+			padding-right: 15px;
+    		padding-left: 15px;
+    		border: 1px solid red;
+    		margin: 0 auto;
+    		position: relative;
+			> .card {
+				 width: 360px;
+			    height: 465px;
+			    position: absolute;
+			    left: 50%;
+			    top: 50%;
+			    transform: translateX(-50%) translateY(-50%);
+			    //margin: 300px auto;
+			    background-color: #fff;
+			    //padding: 70px 60px;
+			    > div {
+			    	margin-top: 40px;
+			    	text-align: center;
+			    	p {
+				    	font-size: 60px;
+				    	color: #000;
+				    	font-weight: 700;
+				    	margin: 0;
+				    }
+			    }
+			    > a {
+			    	width: 100%;
+			    	display: block;
+			    	text-align: center;
+			    	font-size: 60px;
+			    	> span {
+			    		//移入移出都有动画
+			    		transition: all 500ms;
+			    		transform: rotateZ(0deg);
+			    		&:hover {
+			    			transform: rotateZ(360deg);
+			    		}
+			    	}
+			    }
+			}
+	}
+}
+
+

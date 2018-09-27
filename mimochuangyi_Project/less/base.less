@@ -1,0 +1,83 @@
+
+/*
+                 .----.
+               _.'__    `.
+           .--($)($$)---/#\
+         .' @          /###\
+         :         ,   #####
+          `-..__.-' _.-\###/
+                `;_:    `"'
+              .'"""""`.
+             /,  ya ,\\
+            //  no bug!  \\
+            `-._______.-'
+            ___`. | .'___
+           (______|______)
+            
+ */
+
+//主要的声明
+@a-color : #000;
+@header-color : #f9f9f9;
+
+
+/* 样式重置 */
+* {
+    margin: 0px;
+    padding: 0px;
+    /*在移动端设置盒模型border-box 为了防止元素加边框或者padding出现水平滚动条*/
+    box-sizing: border-box;
+    /* 去除移动端按住元素的时候会出现高亮背景色 */
+    -webkit-tap-highlight-color: transparent;
+    /* 去掉所有移动端内边框 */
+    outline: none;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+}
+
+a {
+    color: @a-color;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: 0;
+}
+
+img {
+    /* 解决图片底部3px的间隙 为了让图片的对齐方式和文本一致*/
+    vertical-align: middle;
+}
+
+i {
+    font-style: normal;
+}
+
+//定义一个container
+.container {
+    max-width: 1000px;
+    @media (min-width: 1200px) {
+        width: 1170px;
+    }
+
+    @media (min-width: 992px) {
+        width: 970px;
+    }
+    @media (min-width: 768px) {
+        width: 750px;
+    }
+}
+
+#service {
+    
+}
